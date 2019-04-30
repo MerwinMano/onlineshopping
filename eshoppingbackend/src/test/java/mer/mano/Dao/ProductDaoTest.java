@@ -26,12 +26,12 @@ static ProductDao productdao;
 	@Test
 	public void testAddProduct() {
 		Product product=new Product();
-		product.setProductName("Vivo V1");
-		product.setProductDescription("A mobile with 4G and Volte option");
+		product.setProductName("Asus ZenFone Max Plus M2");
+		product.setProductDescription("A mobile with 1.8GHz octa-core Qualcomm Snapdragon SiP processor");
 		product.setQuantity(10);
-		product.setPrice(15000);
+		product.setPrice(18000);
 		product.setSupplierId(2);
-		product.setCategoryid(1);
+		product.setCategoryid(3);
 		assertTrue("Problem is adding Product",productdao.addProduct(product));
 		//fail("Problem is adding Product",productdao.addProduct(product)");
 	}

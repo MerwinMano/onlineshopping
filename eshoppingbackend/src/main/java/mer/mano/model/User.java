@@ -10,6 +10,7 @@ import javax.persistence.Table;
 @Table
 public class User {
 	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
 	String username;
     String userpassword;
     String customername;
