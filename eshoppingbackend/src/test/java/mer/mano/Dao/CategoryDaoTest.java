@@ -31,12 +31,12 @@ static CategoryDao categorydao;
 		Category category=new Category();
 		//System.out.println("Testing");
 		
-		category.setCategoryName("COMPUTER ACCESSORIES");
-		category.setCategoryDescription("All  COMPUTER ACCESSORIES ARE AVAILABLE ");
+		category.setCategoryName("ASUS Mobile");
+		category.setCategoryDescription("All the Asus Mobile with smart feature  ");
 		//fail("Problem is adding Category\",categorydao.addCategory(category)");
 		assertTrue("Problem is adding Category",categorydao.addCategory(category));
 	}
-       
+       @Ignore
 		@Test
 	public void testUpdateCategory() {
 

@@ -14,7 +14,9 @@ import org.springframework.orm.hibernate4.LocalSessionFactoryBuilder;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import mer.mano.model.Category;
+import mer.mano.model.Product;
 import mer.mano.model.Supplier;
+import mer.mano.model.User;
 
 
 @Configuration
@@ -52,7 +54,7 @@ public class DBconfig {
 		//An array of Class objects of all the entities
 		//Map all entities to relational table
 		//Class classes[]=new Class[]{Product.class,Category.class,User.class,Authorities.class,Customer.class,BillingAddress.class,ShippingAddress.class,Cart.class,CartItem.class,CustomerOrder.class};
-		Class classes[]=new Class[]{Category.class,Supplier.class};
+		Class classes[]=new Class[]{Category.class,Supplier.class,Product.class,User.class};
 	    return lsf.addAnnotatedClasses(classes).buildSessionFactory();
 	}
 	@Bean
